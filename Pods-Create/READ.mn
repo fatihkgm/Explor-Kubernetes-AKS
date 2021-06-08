@@ -1,0 +1,91 @@
+# Kubernetes  - PODs
+1. Kubernetes created a pod
+2. Pulled the docker image from docker hub
+3. Created the container in the pod
+4. Started the container present in the pod
+
+# Create Pods
+kubectl run <pod-name> --image <Container-Image> 
+
+# Replace Pod Name, Container Image
+kubectl run my-first-pod --image stacksimplify/kubenginx:1.0.0
+```  
+
+# List Pods
+kubectl get pods
+
+```
+# To get list of pod names
+kubectl get pods
+
+# Describe the Pod
+kubectl describe pod <Pod-Name>
+kubectl describe pod my-first-pod 
+```
+
+
+# Delete Pod
+kubectl delete pod <Pod-Name>
+```
+
+##Load Balancer Service 
+
+```
+# Create  a Pod
+kubectl run <pod-name> --image <Container-Image> 
+kubectl run my-first-pod --image stacksimplify/kubenginx:1.0.0 
+
+# Expose Pod as a Service
+kubectl expose pod <Pod-Name>  --type=LoadBalancer --port=80 --name=<Service-Name>
+
+# Get Service Info
+kubectl get service
+kubectl get svc
+
+# Describe Service
+kubectl describe service service
+
+# Access Application
+http://<External-IP-from-get-service-output>
+```
+
+### Pod Logs
+```
+# Get Pod Name
+kubectl get pod
+
+# Pod logs
+kubectl logs <pod-name>
+
+
+# Stream pod logs 
+kubectl logs <pod-name>
+kubectl logs -f my-first-pod
+```
+
+### Connect in a POD
+```
+# Nginx Container in a POD
+kubectl exec -it <pod-name> -- /bin/bash
+
+```
+
+```
+kubectl exec -it <pod-name> -- env
+
+```
+
+## Clean-Up
+```
+# Get all Objects
+kubectl get all
+
+# Delete Services
+kubectl delete svc service
+
+# Delete Pod
+kubectl delete pod mypod
+
+# Get all Objects in default namespace
+kubectl get all
+```
