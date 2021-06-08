@@ -27,7 +27,7 @@ kubectl describe pod my-first-pod
 # Delete Pod
 kubectl delete pod <Pod-Name>
 ```
-
+<img width="678" alt="Screen Shot 2021-06-08 at 5 44 12 PM" src="https://user-images.githubusercontent.com/63836841/121262681-85248980-c882-11eb-9c07-c94a2e14ff1a.png">
 ##Load Balancer Service 
 
 ```
@@ -35,7 +35,6 @@ kubectl delete pod <Pod-Name>
 kubectl run <pod-name> --image <Container-Image> 
 kubectl run my-first-pod --image stacksimplify/kubenginx:1.0.0 
 
-<img width="678" alt="Screen Shot 2021-06-08 at 5 44 12 PM" src="https://user-images.githubusercontent.com/63836841/121262496-4262b180-c882-11eb-8245-0de0f3c141e5.png">
 
 # Expose Pod as a Service
 kubectl expose pod <Pod-Name>  --type=LoadBalancer --port=80 --name=<Service-Name>
