@@ -27,13 +27,14 @@ kubectl describe pod my-first-pod
 # Delete Pod
 kubectl delete pod <Pod-Name>
 ```
-
+<img width="678" alt="Screen Shot 2021-06-08 at 5 44 12 PM" src="https://user-images.githubusercontent.com/63836841/121262681-85248980-c882-11eb-9c07-c94a2e14ff1a.png">
 ##Load Balancer Service 
 
 ```
 # Create  a Pod
 kubectl run <pod-name> --image <Container-Image> 
 kubectl run my-first-pod --image stacksimplify/kubenginx:1.0.0 
+
 
 # Expose Pod as a Service
 kubectl expose pod <Pod-Name>  --type=LoadBalancer --port=80 --name=<Service-Name>
