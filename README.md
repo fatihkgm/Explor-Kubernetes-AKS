@@ -83,6 +83,7 @@ http://<External-IP-from-get-service-output>
 
 <img width="996" alt="Screen Shot 2021-06-08 at 12 39 48 AM" src="https://user-images.githubusercontent.com/63836841/121123924-08e26580-c7f2-11eb-925f-a4f6fe74eab9.png">
 ## Clean-Up
+
 ```
 # Delete Applications
 kubectl delete -f kube-aks-manifest/
