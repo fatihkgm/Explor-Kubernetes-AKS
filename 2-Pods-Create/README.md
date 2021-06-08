@@ -1,8 +1,8 @@
 # Kubernetes  - PODs
-1. Kubernetes created a pod
-2. Pulled the docker image from docker hub
-3. Created the container in the pod
-4. Started the container present in the pod
+1. Kubernetes created a pod.
+2. Pulled the docker image from docker hub.
+3. Created the container in the pod.
+4. Started the container present in the pod.
 
 # Create Pods
 kubectl run <pod-name> --image <Container-Image> 
