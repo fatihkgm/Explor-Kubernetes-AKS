@@ -1,5 +1,8 @@
 # AKS-KUBERNETES-INSTRUCTION
 
+# Used Dokcer image which i already created and push  my DockerHub.
+<img width="1244" alt="Screen Shot 2021-06-08 at 12 41 05 AM" src="https://user-images.githubusercontent.com/63836841/121124017-37f8d700-c7f2-11eb-8177-4eb340e7e364.png">
+
 Create Kubernetes Cluster on Azure 
 # AKS Cluster Azure
 
@@ -57,9 +60,11 @@ az aks get-credentials --resource-group aks-rg1 --name aksdemo1
 kubectl get nodes 
 kubectl get nodes -o wide
 ```
+<img width="644" alt="Screen Shot 2021-06-08 at 12 32 50 AM" src="https://user-images.githubusercontent.com/63836841/121123342-0f241200-c7f1-11eb-8062-c1ce9383ac8a.png">
+
 ```
 # Deploy Application
-kubectl apply -f kube-manifests/
+kubectl apply -f kube-aks-manifest/
 
 # Verify Pods
 kubectl get pods
@@ -73,9 +78,13 @@ kubectl get service
 # Access Application
 http://<External-IP-from-get-service-output>
 ```
-## Step-07: Clean-Up
+<img width="804" alt="Screen Shot 2021-06-08 at 12 38 14 AM" src="https://user-images.githubusercontent.com/63836841/121123788-d0428c00-c7f1-11eb-81a3-daa35cab112a.png">
+## Accessable with External-IP
+
+<img width="996" alt="Screen Shot 2021-06-08 at 12 39 48 AM" src="https://user-images.githubusercontent.com/63836841/121123924-08e26580-c7f2-11eb-925f-a4f6fe74eab9.png">
+## Clean-Up
 ```
 # Delete Applications
-kubectl delete -f kube-manifests/
+kubectl delete -f kube-aks-manifest/
 ```
   
