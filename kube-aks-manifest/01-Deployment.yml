@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: felixgokmen-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: deployment1
+  template:
+    metadata: # Dictionary
+      name: deployment1-pod
+      labels: # Dictionary
+        app: deployment1
+    spec:
+      containers: # List
+        - name: deployment1-container
+          image: felixgokmen/webapp:0.1
+          ports:
+            - containerPort: 80
