@@ -6,7 +6,7 @@
 Create Kubernetes Cluster on Azure 
 # AKS Cluster Azure
 
-## Step-03: Cloud Shell - Configure kubectl to connect to AKS Cluster
+## Cloud Shell - Configure kubectl to connect to AKS Cluster
 
 ```
 # Template
