@@ -1,14 +1,16 @@
 # Kubernetes  - PODs
-1. Kubernetes created a pod.
+1. Kubernetes - created a pod.
 2. Pulled the docker image from docker hub.
 3. Created the container in the pod.
 4. Started the container present in the pod.
 
 # Create Pods
 kubectl run <pod-name> --image <Container-Image> 
+# Sample website downloaded and created image in DockerHub
+<img width="1250" alt="Screen Shot 2021-06-08 at 9 03 12 PM" src="https://user-images.githubusercontent.com/63836841/121276604-f07b5500-c89c-11eb-920a-351b3c00b9c1.png">
 
 # Replace Pod Name, Container Image
-kubectl run my-first-pod --image stacksimplify/kubenginx:1.0.0
+kubectl run my-first-pod --image felixgokmen/webapp:01
 ```  
 
 # List Pods
@@ -133,7 +135,9 @@ kubectl get svc
 ```
 http://<External-IP-from-get-service-output>/webapp
 ```
-
+## Namespaces
+kubernetes get namespace
+<img width="1092" alt="Screen Shot 2021-06-08 at 10 41 16 PM" src="https://user-images.githubusercontent.com/63836841/121284302-a4cfa800-c8aa-11eb-9d6c-840e0b95f09d.png">
 ## Clean-Up
 ```
 # Delete ReplicaSet
