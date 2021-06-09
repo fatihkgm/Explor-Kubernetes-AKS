@@ -71,22 +71,90 @@ kubectl exec -it <pod-name> -- /bin/bash
 
 ```
 
-```
-kubectl exec -it <pod-name> -- env
+### Create ReplicaSet <felix-repicants.yaml>
 
+```
+kubectl create -f replicaset-demo.yml
+```
+- **felix-repicants.yaml.yml**
+```yml
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: webapp-ca
+  labels:
+    app: webapp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: webapp
+  template:
+    metadata:
+      labels:
+        app: webapp
+    spec:
+      containers:
+      - name: mwebapp-app
+        image: felixgokmen/webapp:0.1
+```
+
+### List ReplicaSets
+- Get list of ReplicaSets
+```
+kubectl get replicaset
+kubectl get rs
+```
+
+### Describe ReplicaSet
+- Describe the created ReplicaSet
+```
+kubectl describe rs/<replicaset-name>
+
+```
+
+### List of Pods
+- Get list of Pods
+```
+#Get list of Pods
+kubectl get pods
+kubectl describe pod <pod-name>
+
+# Get list of Pods with Pod IP and Node in which it is running
+kubectl get pods -o wide
+```
+
+# Get Service Info
+kubectl get service
+kubectl get svc
+
+```
+- **Access the Application using External or Public IP**
+```
+http://<External-IP-from-get-service-output>/webapp
 ```
 
 ## Clean-Up
 ```
-# Get all Objects
-kubectl get all
+# Delete ReplicaSet
+kubectl delete rs <ReplicaSet-Name>
 
-# Delete Services
-kubectl delete svc service
+# Sample Commands
+kubectl delete rs/name
+[or]
+kubectl delete rs name
 
-# Delete Pod
-kubectl delete pod mypod
+# Verify if ReplicaSet got deleted
+kubectl get rs
 
-# Get all Objects in default namespace
-kubectl get all
+# Delete Service
+kubectl delete svc <service-name>
+
+# Sample Commands
+kubectl delete svc servicename
+[or]
+kubectl delete svc/servicename
+
+# Verify if Service got deleted
+kubectl get svc
 ```
