@@ -7,6 +7,7 @@
 # Create Pods
 kubectl run <pod-name> --image <Container-Image> 
 # Sample website downloaded and created image in DockerHub
+DockerHub image link : https://hub.docker.com/repository/registry-1.docker.io/felixgokmen/webapp/tags?page=1&ordering=last_updated
 <img width="1250" alt="Screen Shot 2021-06-08 at 9 03 12 PM" src="https://user-images.githubusercontent.com/63836841/121276604-f07b5500-c89c-11eb-920a-351b3c00b9c1.png">
 
 # Replace Pod Name, Container Image
