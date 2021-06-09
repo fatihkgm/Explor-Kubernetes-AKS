@@ -77,7 +77,9 @@ kubectl exec -it <pod-name> -- /bin/bash
 kubectl exec -it <pod-name> -- env
 
 ```
-
+## Namespaces
+kubernetes get namespace
+<img width="1092" alt="Screen Shot 2021-06-08 at 10 41 16 PM" src="https://user-images.githubusercontent.com/63836841/121284302-a4cfa800-c8aa-11eb-9d6c-840e0b95f09d.png">
 ## Clean-Up
 ```
 # Get all Objects
