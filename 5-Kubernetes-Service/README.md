@@ -37,5 +37,5 @@ http://<External-IP-from-get-service-output>/webapp
 
 # Test again to view the backend service Load Balancing
 http://<External-IP-from-get-service-output>/webapp
-```
+
 <img width="1040" alt="Screen Shot 2021-06-09 at 7 19 21 PM" src="https://user-images.githubusercontent.com/63836841/121441337-99868600-c957-11eb-8a66-b871a907e150.png">
