@@ -24,7 +24,9 @@ kubectl get rs
 # Verify Pod
 kubectl get po
 ```
-
+<img width="853" alt="Screen Shot 2021-06-09 at 12 46 35 PM" src="https://user-images.githubusercontent.com/63836841/121395741-ba7fb480-c920-11eb-93b8-418475f7130c.png">
+<br><br>
+<img width="956" alt="Screen Shot 2021-06-09 at 12 47 55 PM" src="https://user-images.githubusercontent.com/63836841/121395975-eac75300-c920-11eb-98fa-65dfa932fdf1.png">
 
 ## Scaling a Deployment
 - Scale the deployment to increase the number of replicas (pods)
@@ -58,8 +60,12 @@ kubectl expose deployment webapp-deplyment --type=LoadBalancer --port=80 --targe
 # Get Service Info
 kubectl get svc
 
+
+
 ```
+<img width="1022" alt="Screen Shot 2021-06-09 at 12 50 19 PM" src="https://user-images.githubusercontent.com/63836841/121396316-40036480-c921-11eb-9ba2-3a070a0ffe71.png">
 - **Access the Application using Public IP**
 ```
 http://<External-IP-from-get-service-output>
 ```
+<img width="877" alt="Screen Shot 2021-06-09 at 12 51 14 PM" src="https://user-images.githubusercontent.com/63836841/121396446-61645080-c921-11eb-89eb-08a7259c0039.png">
