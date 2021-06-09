@@ -10,7 +10,7 @@ kubectl run <pod-name> --image <Container-Image>
 <img width="1250" alt="Screen Shot 2021-06-08 at 9 03 12 PM" src="https://user-images.githubusercontent.com/63836841/121276604-f07b5500-c89c-11eb-920a-351b3c00b9c1.png">
 
 # Replace Pod Name, Container Image
-kubectl run my-first-pod --image stacksimplify/kubenginx:1.0.0
+kubectl run my-first-pod --image felixgokmen/webapp:01
 ```  
 
 # List Pods
