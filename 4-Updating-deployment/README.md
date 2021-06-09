@@ -12,7 +12,7 @@ kubectl get deployment webapp-deplyment -o yaml
 
 # Update Deployment - SHOULD WORK NOW
 kubectl set image deployment/<Deployment-Name> <Container-Name>=<Container-Image> --record=true
-kubectl set image deployment/webapp-deplyment kubenginx=stacksimplify/kubenginx:2.0.0 --record=true
+kubectl set image deployment/webapp-deplyment kubenginx=felixgokmen/webapp:2.0 --record=true
 ```
 
 ```
@@ -74,12 +74,12 @@ kubectl edit deployment/webapp-deplyment --record=true
 # Change From 2.0.0
     spec:
       containers:
-      - image: stacksimplify/kubenginx:2.0.0
+      - image: felixgokmen/webapp:2.0
 
 # Change To 3.0.0
     spec:
       containers:
-      - image: stacksimplify/kubenginx:3.0.0
+      - image: felixgokmen/webapp:3.0
 ```
 
 ### Verify Rollout Status
