@@ -21,8 +21,7 @@ kubectl get pods
 kubectl get pods
 
 # Describe the Pod
-kubectl describe pod <Pod-Name>
-kubectl describe pod my-first-pod 
+kubectl describe pod <Pod-Name> 
 ```
 
 
@@ -65,7 +64,8 @@ kubectl logs <pod-name>
 kubectl logs <pod-name>
 kubectl logs -f my-first-pod
 ```
-
+# Namespaces
+<img width="1092" alt="Screen Shot 2021-06-08 at 10 41 16 PM" src="https://user-images.githubusercontent.com/63836841/121284302-a4cfa800-c8aa-11eb-9d6c-840e0b95f09d.png">
 ### Connect in a POD
 ```
 # Nginx Container in a POD
@@ -132,12 +132,14 @@ kubectl get svc
 
 ```
 - **Access the Application using External or Public IP**
-```
 http://<External-IP-from-get-service-output>/webapp
+```
+
+
 ```
 ## Namespaces
 kubernetes get namespace
-<img width="1092" alt="Screen Shot 2021-06-08 at 10 41 16 PM" src="https://user-images.githubusercontent.com/63836841/121284302-a4cfa800-c8aa-11eb-9d6c-840e0b95f09d.png">
+
 ## Clean-Up
 ```
 # Delete ReplicaSet
