@@ -24,11 +24,11 @@ kubectl get svc
 
 ```
 
-# Create Deployment for Frontend Nginx Proxy
+# Create Deployment
 kubectl create deployment front-end-app --image=felixgokmen/aws-project-maven:0.1
 kubectl get deploy
 
-# Create LoadBalancer Service for Frontend Nginx Proxy
+# Create LoadBalancer Service 
 kubectl expose deployment front-end-app  --type=LoadBalancer --port=8080 --target-port=8080 --name=frontend-service
 kubectl get svc
 
