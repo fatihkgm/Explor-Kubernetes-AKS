@@ -111,3 +111,5 @@ kubectl get svc
 http://<External-IP-from-get-service-output>
 ```
 <img width="890" alt="Screen Shot 2021-06-09 at 1 34 59 PM" src="https://user-images.githubusercontent.com/63836841/121402094-7d6af080-c927-11eb-846a-913a44fe3a15.png">
+ 
+<img width="757" alt="Screen Shot 2021-06-09 at 3 14 41 PM" src="https://user-images.githubusercontent.com/63836841/121415162-6c28e080-c935-11eb-96dc-82f5b6c88e32.png">
