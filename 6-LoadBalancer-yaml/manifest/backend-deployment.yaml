@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: back-end
+  labels:
+    app: back-end
+    tier: backend 
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: back-end
+  template:
+    metadata:
+      labels:
+        app: back-end
+        tier: backend 
+    spec: 
+      containers:
+        - name: back-end
+          image: felixgokmen/backend-hello-world:0.1
+          ports:
+            - containerPort: 8080     

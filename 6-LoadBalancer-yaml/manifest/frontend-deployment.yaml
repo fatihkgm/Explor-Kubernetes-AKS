@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata:
+  name: frontend
+  labels:
+    app: frontend
+    tier: frontend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: frontend
+  template: 
+    metadata:
+      labels: 
+        app: frontend
+        tier: frontend
+    spec: 
+      containers: 
+        - name: frontend
+          image: felixgokmen/webapp:0.1
+          ports:
+            - containerPort: 80
