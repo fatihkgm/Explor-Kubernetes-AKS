@@ -14,3 +14,5 @@ kubectl delete -f manifests/
 kubectl get all
 ```
 <img width="887" alt="Screen Shot 2021-06-09 at 11 48 28 PM" src="https://user-images.githubusercontent.com/63836841/121461649-445d6b00-c97d-11eb-9f81-fd249d80588a.png">
+
+<img width="615" alt="Screen Shot 2021-06-10 at 12 26 38 AM" src="https://user-images.githubusercontent.com/63836841/121464784-889f3a00-c982-11eb-9999-e3010cb4c67b.png">
