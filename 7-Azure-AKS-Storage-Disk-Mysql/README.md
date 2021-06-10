@@ -13,7 +13,7 @@
 ## Deploy User Management 
 ```
 # Deploy all Manifests
-kubectl apply -f storage-manifests/
+kubectl apply -f storage-manifest/
 
 # List Pods
 kubectl get pods
@@ -28,14 +28,14 @@ kubectl get svc
 
 # Access Application
 http://<External-IP-from-get-service-output>
-Username: admin123
-Password: password123
+Username: 
+Password: 
 ```
 
 ## Clean Up 
 ```
 # Delete all Objects created
-kubectl delete -f kube-manifests/
+kubectl delete -f storage-manifest/
 
 # Verify current Kubernetes Objects
 kubectl get all
