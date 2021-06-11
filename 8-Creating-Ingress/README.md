@@ -74,11 +74,6 @@ kubectl get pods -n ingress-controller
 kubectl get all -n ingress-controller
 
 
-# Access Public IP
-<Public-IP-created-for-Ingress>
-
-
-
 
 # Deploy
 kubectl apply -f manifests/
@@ -93,8 +88,8 @@ kubectl get svc
 kubectl get ingress
 
 # Access Application
-http://<Public-IP-created-for-Ingress>
-http://<Public-IP-created-for-Ingress>
+Public-IP-created-for-Ingress
+
 
 # Ingress Controller Logs
 kubectl get pods -n ingress-controller
@@ -105,5 +100,6 @@ kubectl logs -f <pod-name> -n ingress-controller
 ```
 # Delete Apps
 kubectl delete -f manifests/
-
+# Access Application
+<img width="1519" alt="Screen Shot 2021-06-11 at 12 20 15 AM" src="https://user-images.githubusercontent.com/63836841/121630306-e26b3700-ca4a-11eb-9b0f-9d86db50882c.png">
 
