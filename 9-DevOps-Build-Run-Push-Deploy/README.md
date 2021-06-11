@@ -52,3 +52,11 @@ docker stop azure-nginx:0.1
 
 
 
+## Azure DevOps Build Push to ACR
+Link for the source code : https://github.com/fatihkgm/azure-aks-devops-cluster
+
+
+
+<img width="1179" alt="Screen Shot 2021-06-11 at 3 16 54 AM" src="https://user-images.githubusercontent.com/63836841/121646588-7a751a80-ca63-11eb-96b2-497b61942a9a.png">
+
+
