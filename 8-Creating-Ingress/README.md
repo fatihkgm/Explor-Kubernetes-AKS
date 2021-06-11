@@ -74,11 +74,6 @@ kubectl get pods -n ingress-controller
 kubectl get all -n ingress-controller
 
 
-# Access Public IP
-<Public-IP-created-for-Ingress>
-
-
-
 
 # Deploy
 kubectl apply -f manifests/
@@ -93,8 +88,8 @@ kubectl get svc
 kubectl get ingress
 
 # Access Application
-http://<Public-IP-created-for-Ingress>
-http://<Public-IP-created-for-Ingress>
+Public-IP-created-for-Ingress
+
 
 # Ingress Controller Logs
 kubectl get pods -n ingress-controller
