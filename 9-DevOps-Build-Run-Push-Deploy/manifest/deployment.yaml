@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aksvncluster-deployment
+  labels:
+    app: aksvncluster
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aksvncluster
+  template:
+    metadata:
+      labels:
+        app: aksvncluster
+    spec:
+      containers:
+        - name: aksvncluster
+          image: aksvmregistry.azurecr.io/webapp/kube-nginx-acr:v1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+            
