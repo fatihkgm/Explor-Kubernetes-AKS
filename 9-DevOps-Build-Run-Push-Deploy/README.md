@@ -21,6 +21,8 @@ kubectl get pods -n kube-system
 
 <img width="1002" alt="Screen Shot 2021-06-11 at 2 03 18 AM" src="https://user-images.githubusercontent.com/63836841/121638563-31b86400-ca59-11eb-9796-6946fd1ef54d.png">
 
+<img width="730" alt="Screen Shot 2021-06-11 at 2 37 47 AM" src="https://user-images.githubusercontent.com/63836841/121642071-03895300-ca5e-11eb-9146-bd5992c71cd8.png">
+
 
 ## Build Docker Image Locally
 ```

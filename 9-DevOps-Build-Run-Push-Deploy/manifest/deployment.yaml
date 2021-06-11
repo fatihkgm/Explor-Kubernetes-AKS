@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: aksvncluster
-          image: aksvmregistry.azurecr.io/webapp/kube-nginx-acr:v1
+          image: aksvmregistry.azurecr.io/webapp/azure-nginx:0.1
           imagePullPolicy: Always
           ports:
             - containerPort: 80
