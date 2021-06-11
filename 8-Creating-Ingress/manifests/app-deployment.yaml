@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-deployment
+  labels:
+    app: mywebapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mywebapp
+  template:
+    metadata:
+      labels:
+        app: mywebapp
+    spec:
+      containers:
+        - name: mywebapp
+          image: felixgokmen/portfoli-app-1:latest
+          ports:
+            - containerPort: 80
