@@ -52,10 +52,6 @@ brew install helm
 # Create a namespace for resources
 kubectl create namespace ingress-controller
 
-# Stable repository
-helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
-helm repo add stable https://charts.helm.sh/stable
-helm repo update
 
 #  Customizing the Chart. 
 helm show values ingress-nginx/ingress-nginx
@@ -109,6 +105,5 @@ kubectl logs -f <pod-name> -n ingress-controller
 ```
 # Delete Apps
 kubectl delete -f manifests/
-```
 
 
