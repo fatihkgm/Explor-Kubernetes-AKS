@@ -105,5 +105,6 @@ kubectl logs -f <pod-name> -n ingress-controller
 ```
 # Delete Apps
 kubectl delete -f manifests/
-
+# Access Application
+<img width="1519" alt="Screen Shot 2021-06-11 at 12 20 15 AM" src="https://user-images.githubusercontent.com/63836841/121630306-e26b3700-ca4a-11eb-9b0f-9d86db50882c.png">
 
